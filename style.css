@@ -23,6 +23,10 @@ body{
     font-family: 'Inter';
 }
 
+    #principal div a:hover{
+        color:#6a3d3d ;    
+    }
+
 #principal button{
     /*Centralize os alinhamentos de um dos itens dentro de um elemento flexível*/
     align-self: center;
@@ -39,6 +43,8 @@ body{
     color: #ffffff;
     text-align: center;
     box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+    /*PARA FAZE APARECE A MÃO QUANDO CURSO PASSA POR SIMA NO BUTTON*/
+    cursor: pointer;
 }
 
 #menu{
@@ -49,4 +55,11 @@ body{
     width: 55%;
     /*isso e para defini espaçamento display descontado o espaço lateral*/
     justify-content: space-around;
+    margin-left: 5.7%;
+}
+#center{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
 }
