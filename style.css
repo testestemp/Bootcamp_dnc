@@ -1,65 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+:root{
+    --azul-dnc: #0C70f2;
+    --preto-dnc: #303030;
+    --cinza-houver: #c9c9c9;
+    --white-dnc:#ffffff; 
+
+    --fonte-padrao: 'inter';
+}
 body{
     margin: 0px;/* margem Exterena*/
     padding:0px;/*margem interna*/
+
+     background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+    background-repeat: no-repeat;
 }
 
 #principal{
     width: 100%;
     height: 80px;
-    border: 1px solid black;
-    background-color: #303030;
+    border: 1px solid var(--preto-dnc);
+    background-color: var(--preto-dnc);
 
     display: flex;
     /*isso e para defini espaçamento display com o espaço lateral*/
     justify-content: space-between;
 }
 
-#principal div a{
-    font-size: 25px;
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-    font-family: 'Inter';
-}
-
-    #principal div a:hover{
-        color:#6a3d3d ;    
+    #principal div a{
+        font-size: 25px;
+        font-weight: 600;
+        color: #ffffff;
+        text-decoration: none;
+        font-family: var(--fonte-padrao
+    );
     }
 
-#principal button{
-    /*Centralize os alinhamentos de um dos itens dentro de um elemento flexível*/
-    align-self: center;
-    margin-right: 5%;
-    background-color: #0C70F2;
-    border: 0px;
+        #principal div a:hover{
+            color:#6a3d3d ;    
+        }
 
-    height: 40px;
-    width: 80px;
+    #principal button{
+        /*Centralize os alinhamentos de um dos itens dentro de um elemento flexível*/
+        align-self: center;
+        margin-right: 5%;
+        background-color: var(--azul-dnc);
+        border: 0px;
 
-    font-family: 'Inter';
-    font-size: 20px;
-    font-weight: 600;
-    color: #ffffff;
-    text-align: center;
-    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
-    /*PARA FAZE APARECE A MÃO QUANDO CURSO PASSA POR SIMA NO BUTTON*/
-    cursor: pointer;
-}
+        height: 40px;
+        width: 80px;
 
-#menu{
+        font-family: 'Inter';
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--white-dnc);
+        text-align: center;
+        box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+        /*PARA FAZE APARECE A MÃO QUANDO CURSO PASSA POR SIMA NO BUTTON*/
+        cursor: pointer;
+    }
+
+    #menu{
+        align-items: center;
+        /**/
+        display:flex ;
+        /*para define o espaço que a id menu vai ocupa na pagina */
+        width: 55%;
+        /*isso e para defini espaçamento display descontado o espaço lateral*/
+        justify-content: space-around;
+        margin-left: 5.7%;
+    }
+    #center{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+    }
+/*Secão pricipal sate*/
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    /**/
-    display:flex ;
-    /*para define o espaço que a id menu vai ocupa na pagina */
-    width: 55%;
-    /*isso e para defini espaçamento display descontado o espaço lateral*/
-    justify-content: space-around;
-    margin-left: 5.7%;
+
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
-#center{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
-}
+    header{
+        color: var(--white-dnc);
+        font-family: var(--fonte-padrao);
+    }
+    header h1{
+        text-transform: uppercase;
+        font-size: 80px;
+        font-weight: 800;
+        text-align: center;
+
+        margin-bottom:20px;
+    }
+    header h2{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+
+        margin-bottom: 100px;
+    }
+    header .invert{
+        background-color;: #000000);
+        font-weight: bold;
+        padding: 5px;       
+    }
