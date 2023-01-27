@@ -36,7 +36,7 @@ body{
     }
 
         #principal div a:hover{
-            color:#6a3d3d ;    
+            color:var(--cinza-houver) ;    
         }
 
     #principal button{
@@ -156,5 +156,129 @@ section{
         margin-top: 50px;
         box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.164);
         cursor: pointer;
+
+    }
+    /*Footer*/
+
+    footer{
+        width: 100%;
+        background-color:var(--azul-dnc)
+    }
+    footer .linha1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        font-size: 18px;
+
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: 300px;
+    }
+    footer h5{
+        text-align: center;
+        color: var(--white-dnc);
+        font-weight: 800;
+        font-size: 18px;
+        font-family: var(--fonte-padrao);
+        background-color: var(--preto-dnc);
+        border-radius: 10px;
+
+        padding: 0px 15px 0px 15px;
+        margin-bottom: 15px;
+    }
+    footer ul li a:hover{
+        color: var(--cinza-houver);
+    }
+    footer ul li{
+        text-align: center;
+        color: var(--white-dnc);
+        font-weight: 600;
+        font-size: 18px;
+        font-family: var(--fonte-padrao);
+
+        margin: 20px 0px 20px 0px;
+    }
+    footer ul li a{
+        color: var(--white-dnc);
+        text-decoration: none;
+    }
+    footer .endereco{
+        font-weight: 600;
+        font-size: 18px;
+        font-family: var(--fonte-padrao);
+        color: var(--white-dnc);
+        text-align: center;
+        width: 25%;
+    }
+    footer .linha2{
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        padding: 20px 0px 10px 0px;
+        margin: 0px;
+        
+    }
+    footer .linha2 a{
+        color: var(--white-dnc);
+        font-family: var(--fonte-padrao);
+        font-size: 18px;
+        text-decoration: none;
+        padding: 5px;
+    }
+    footer .linha2 a:first-child{
+        border-right: 2.5px  solid var(--white-dnc);
+        height: 18px;
+    }
+    footer .linha2 a:hover{
+        color: var(--cinza-houver);
+    }
+
+    /*mobile*/
+    @media only screen and (max-width: 600px){
+        /*menu*/
+        #principal{
+            flex-direction: column;
+            height: auto;
+        }
+        #menu{
+            flex-direction: column;
+            width: 100%;
+            margin: 0px;
+        }
+        #menu a{
+            display: flex;
+            align-items: center;
+            height: 50px;
+              
+        }   
+        #principal button{
+            width:100%;
+            margin: 0px;
+        }
+        /*section*/
+        section h1{
+            font-size: 38px;
+        }
+        section h2{
+            font-size: 28px;
+            padding: 0px 15px 0px 15px;
+        }
+        form{
+            width: 95%;
+            font-size: 20px;
+        }
+        .checkbox-itens label{
+            font-size: 15px;
+        }
 
     }
