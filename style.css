@@ -278,7 +278,25 @@ section{
             font-size: 20px;
         }
         .checkbox-itens label{
-            font-size: 15px;
+            font-size: 12px;
+            margin: 0px 5px 0px 5px;
         }
+        .checkbox-itens input{
+            height: 10px;
+        }
+        /* Footer*/
 
+        footer .linha1{
+            flex-direction: column;
+        }
+        footer .endereco{
+            width: 95%;
+            margin-bottom: 20px;
+        }
+        footer .linha2{
+            width: 100%;
+        }
+        footer .linha2 a{
+            font-size: 16px;
+        }
     }
